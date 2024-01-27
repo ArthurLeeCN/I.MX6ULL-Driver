@@ -1,0 +1,19 @@
+#include "board_init.h"
+
+void clk_enable()
+{
+    CCM->CCGR1 = 0xFFFFFFFF;
+}
+
+void led_init()
+{
+    IOMUX_SW_MUX->GPIO1_IO03=0x00000005;
+    IOMUX_SW_PAD->GPIO1_IO03=0x000010b0;
+//    IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO03 = 0x00000005;
+//    IOMUXC_SW_PAD_CTL_PAD_GPIO1_IO03 = 0x000010b0;
+    GPIO1->GDIR=0x00000008;
+    GPIO1->DR=0x00000000;
+
+    // GPIO1_GDIR = 0x00000008;
+    // GPIO1_DR = 0x00000000;
+}
