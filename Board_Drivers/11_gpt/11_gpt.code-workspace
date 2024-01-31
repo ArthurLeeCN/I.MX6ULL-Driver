@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"fsl_common.h": "c",
+			"imx6u_int.h": "c",
+			"main.h": "c",
+			"time.h": "c",
+			"led.h": "c",
+			"clk.h": "c",
+			"mcimx6y2.h": "c",
+			"cc.h": "c",
+			"key.h": "c",
+			"beep.h": "c",
+			"gpio.h": "c",
+			"exti.h": "c",
+			"epit.h": "c",
+			"gpt.h": "c",
+			"core_ca7.h": "c"
+		}
+	}
+}
